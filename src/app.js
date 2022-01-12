@@ -6,6 +6,7 @@ const Bus = require("./models/model");
 const {ObjectID} = require("mongodb");
 
 
+
 app.use(express.json());
 app.post("/api",async(req,res)=>{
     try {
