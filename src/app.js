@@ -9,7 +9,7 @@ const {ObjectID} = require("mongodb");
 app.use(express.json());
 app.post("/api",async(req,res)=>{
     try {
-        const user = new Bus(req.body);
+        const user = new  Bus(req.body);
         console.log(user);
         const result = await user.save();
         res.status(200).send(result);
